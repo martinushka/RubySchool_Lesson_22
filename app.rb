@@ -18,9 +18,10 @@ end
 post '/visit' do
 	
 	@username = params[:username]
-	@phone = params[:phone]
+	@phone    = params[:phone]
 	@datetime = params[:datetime]
-	@barber = params[:barber]
+	@barber   = params[:barber]
+	@color    = params[:color]
 
 	erb "OK, #{@username}, #{@phone}, #{@datetime}, #{@barber}"
 end
