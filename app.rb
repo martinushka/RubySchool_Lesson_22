@@ -24,11 +24,11 @@ post '/visit' do
 	@barber   = params[:barber]
 	@color    = params[:color]
 
-	hh = {  :username => 'Введите имя', 
-			:phone => 'Введите телефон', 
-			:datetime => 'Введите дату и время', 
-			:barber => 'Введите имя парикхмахера', 
-			:color => 'Введите цвет' }
+	hh = {  :username 	=> 'Введите имя',  
+			:phone 		=> 'Введите телефон', 
+			:datetime 	=> 'Введите дату и время', 
+			:barber 	=> 'Введите имя парикхмахера', 
+			:color 		=> 'Введите цвет' }
 
 	#Для каждой пары ключ значение
 	hh.each do |key,value|
